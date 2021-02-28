@@ -34,12 +34,11 @@ jobs:
       - name: Build
         run: |
           CARGO_TARGET_DIR=./build_assets cargo build --all --release
-          strip ./build_assets/release/daemon
-          strip ./build_assets/release/client
+          strip ./build_assets/release/wait_exec
 
       - name: Create ZIP archive
         run: |
-          zip -9vrj ./${{ matrix.asset_name }}.zip ./build_assets/release/daemon ./build_assets/release/client
+          zip -9vrj ./${{ matrix.asset_name }}.zip ./build_assets/release/wait_exec
           FILE=./${{ matrix.asset_name }}.zip
           DGST=./${{ matrix.asset_name }}.dgst
           openssl dgst -md5    $FILE | sed 's/([^)]*)//g' >>$DGST
