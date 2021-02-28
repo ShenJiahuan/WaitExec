@@ -25,10 +25,6 @@ jobs:
           default: true
           override: true
 
-      - name: Get version
-        run: |
-          echo "VERSION=$(cat ".github/build/version" | head -1 | tr -d [:space:])" >> $GITHUB_ENV
-
       - name: Build
         run: |
           CARGO_TARGET_DIR=./build_assets cargo build --all --release
