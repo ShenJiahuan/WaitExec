@@ -1,4 +1,7 @@
 # WaitExec
+![](https://github.com/ShenJiahuan/WaitExec/workflows/test/badge.svg)
+![](https://github.com/ShenJiahuan/WaitExec/workflows/build/badge.svg)
+![](https://img.shields.io/github/license/ShenJiahuan/WaitExec)
 A distributed manager to schedule dependent jobs.
 
 ## Required
