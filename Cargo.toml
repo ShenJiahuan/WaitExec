@@ -1,6 +1,6 @@
 [package]
 name = "wait_exec"
-version = "0.1.0"
+version = "0.0.1"
 authors = ["shenjiahuan <shenjiahuan@sjtu.edu.cn>"]
 edition = "2018"
 
